@@ -122,7 +122,6 @@ header
 .work
 {
   list-style: none;
-  
 }
 
 .work p
@@ -307,9 +306,8 @@ footer
   color:  #000000;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
-
 }
+
 footer ul
 {
   display: flex;
@@ -320,7 +318,8 @@ footer ul
 }
 
 .socials{
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  
 }
 
 .socials li
@@ -362,6 +361,11 @@ footer a:active
   color: #f5f5f5;
   background-color: #000000;
   font-style: italic;
+}
+
+footer p
+{
+  font-size: .7rem;
 }
 
 
