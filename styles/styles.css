@@ -611,7 +611,7 @@ Mobile styles (screen width less than 480px):
     background-color: #a1c4be;
     border-top: .1rem solid #000000;
     border-bottom: .1rem solid #000000;
-    margin-bottom: 32rem;
+    margin-bottom: 36rem;
   }
 
   h1 
@@ -651,7 +651,7 @@ Mobile styles (screen width less than 480px):
   .workHistory
   {
     padding-bottom: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     border-bottom: .2rem solid #000000;
   }
 
@@ -700,16 +700,15 @@ Mobile styles (screen width less than 480px):
 
   .contactLinks li
   {
-    margin: .2rem;
-    font-size: .9rem;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
     
   }
   .contactLinks li:nth-child(2)
   {
     text-align: center;
-    
     margin: 0 auto;
-    font-size: .9rem; 
+    font-size: 1rem;
   }
 
   aside section
@@ -771,7 +770,7 @@ Mobile styles (screen width less than 480px):
 
   .socials
   {
-    font-size: .6rem;
+    font-size: .8rem;
     margin-bottom: 1rem;
   }
 }
