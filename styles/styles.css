@@ -590,10 +590,9 @@ Mobile styles (screen width less than 480px):
 
 @media screen and (max-width: 480px) 
 {
-
   body
   {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   main 
@@ -610,14 +609,13 @@ Mobile styles (screen width less than 480px):
     height: 5rem;
     padding: 0;
     background-color: #a1c4be;
-    border-top: .2rem solid #000000;
-    border-bottom: .2rem solid #000000;
     margin-bottom: 39rem;
+    border: none;
   }
 
   h1 
   {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   h2
@@ -647,7 +645,7 @@ Mobile styles (screen width less than 480px):
   }
 
   .work{
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   .workHistory
@@ -682,7 +680,7 @@ Mobile styles (screen width less than 480px):
     width: 100%;
     border: none;
     border-radius: 0rem;
-    box-shadow: 3px 3px 10px #a9a9a9;
+    box-shadow: .3rem .3rem .2rem .1rem #a9a9a9;
     margin-top: 7rem;
     margin-bottom: 1rem;
   }
@@ -717,7 +715,7 @@ Mobile styles (screen width less than 480px):
   aside section
   {
     width: 88%;
-    font-size: .9rem;
+    font-size: 1rem;
     color: #000000;
     background-color: #f5f5f5;
     border: none;
@@ -776,19 +774,18 @@ Mobile styles (screen width less than 480px):
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.8rem;
-    
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
   }
 
   .socials li
   {
-    margin-bottom: .6rem;
+    margin-bottom: .8rem;
   }
 
   footer p
   { 
     font-size: .7rem;
   }
-  
+
 }
