@@ -611,7 +611,7 @@ Mobile styles (screen width less than 480px):
     background-color: #a1c4be;
     border-top: .1rem solid #000000;
     border-bottom: .1rem solid #000000;
-    margin-bottom: 36rem;
+    margin-bottom: 39rem;
   }
 
   h1 
@@ -632,6 +632,7 @@ Mobile styles (screen width less than 480px):
   .bio
   {
     padding: 1rem;
+    padding-bottom: 0;
     border: none;
   }
 
@@ -650,7 +651,7 @@ Mobile styles (screen width less than 480px):
 
   .workHistory
   {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin-bottom: 0;
     border-bottom: .2rem solid #000000;
   }
@@ -682,7 +683,7 @@ Mobile styles (screen width less than 480px):
     border-radius: 0rem;
     box-shadow: 3px 3px 10px #a9a9a9;
     margin-top: 7rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
   }
 
   aside h2
@@ -694,21 +695,20 @@ Mobile styles (screen width less than 480px):
   .contact
   {
     text-align: center;
-    font-size: 1.2rem;
     width: 100%;    
   }
 
   .contactLinks li
   {
     margin-bottom: .5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     
   }
   .contactLinks li:nth-child(2)
   {
     text-align: center;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   aside section
@@ -770,7 +770,21 @@ Mobile styles (screen width less than 480px):
 
   .socials
   {
-    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+    
     margin-bottom: 1rem;
   }
+
+  .socials li
+{
+  margin-bottom: .6rem;
+}
+
+footer p
+{ 
+  font-size: .7rem;
+}
 }
