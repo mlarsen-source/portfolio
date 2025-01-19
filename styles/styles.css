@@ -708,7 +708,7 @@ Mobile styles (screen width less than 480px):
   .contactLinks li:nth-child(2)
   {
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: .5rem;
     font-size: 1.1rem;
   }
 
