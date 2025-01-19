@@ -27,6 +27,8 @@ color: #cbcbcb;
 shadows
 color: #a9a9a9;
 
+color:  #9b9b9b;
+
 aside background
 color: #404040;
 
@@ -609,7 +611,7 @@ Mobile styles (screen width less than 480px):
     height: 5rem;
     padding: 0;
     background-color: #a1c4be;
-    margin-bottom: 39rem;
+    margin-bottom: 41rem;
     border: none;
   }
 
@@ -680,9 +682,9 @@ Mobile styles (screen width less than 480px):
     width: 100%;
     border: none;
     border-radius: 0rem;
-    box-shadow: .3rem .3rem .2rem .1rem #a9a9a9;
+    box-shadow: 4px 4px 8px #9b9b9b;
     margin-top: 7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   aside h2
