@@ -434,7 +434,6 @@ Mobile styles (screen width less than 960px):
     padding-bottom: 1rem;
   }
 
-
   footer
   {
     margin-top: .5rem;
@@ -516,9 +515,10 @@ Mobile styles (screen width less than 720px):
   }
 
   footer p
-{
-  font-size: .5rem;
-}
+  {
+    font-size: .5rem;
+  }
+
 }
 
 
@@ -583,6 +583,7 @@ Mobile styles (screen width less than 600px):
   
 }
 
+
 /*******************************************
 Mobile styles (screen width less than 480px): 
 ********************************************/
@@ -609,15 +610,15 @@ Mobile styles (screen width less than 480px):
     height: 5rem;
     padding: 0;
     background-color: #a1c4be;
-    border-top: .1rem solid #000000;
-    border-bottom: .1rem solid #000000;
+    border-top: .2rem solid #000000;
+    border-bottom: .2rem solid #000000;
     margin-bottom: 39rem;
   }
 
   h1 
-    {
-      font-size: 2rem;
-    }
+  {
+    font-size: 2rem;
+  }
 
   h2
   {
@@ -695,7 +696,8 @@ Mobile styles (screen width less than 480px):
   .contact
   {
     text-align: center;
-    width: 100%;    
+    width: 100%;
+    border: none;    
   }
 
   .contactLinks li
@@ -704,6 +706,7 @@ Mobile styles (screen width less than 480px):
     font-size: 1.3rem;
     
   }
+
   .contactLinks li:nth-child(2)
   {
     text-align: center;
@@ -779,12 +782,13 @@ Mobile styles (screen width less than 480px):
   }
 
   .socials li
-{
-  margin-bottom: .6rem;
-}
+  {
+    margin-bottom: .6rem;
+  }
 
-footer p
-{ 
-  font-size: .7rem;
-}
+  footer p
+  { 
+    font-size: .7rem;
+  }
+  
 }
