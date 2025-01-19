@@ -101,7 +101,6 @@ header
   flex-direction: row;
   align-items: flex-end;
   height: 8rem;
-  font-size: 2.5rem; 
   padding-left: 2rem;
   padding-bottom: 2rem;
   background-color: #a1c4be;
@@ -132,10 +131,9 @@ header
 
 .duties
 {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: disc;
-  font-size: .8rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   margin-bottom: .6rem;
 }
 
@@ -160,6 +158,7 @@ aside
   color: #ffffff;
   background-color: #404040;
   border-right: .1rem solid #000000;
+  border-bottom: .1rem solid #000000;
 }
 
 
@@ -168,7 +167,7 @@ img
 {
   align-self: center;
   width: 80%;
-  border: 3px solid #000000;
+  border: 2px solid #000000;
   border-radius: 100rem;
   box-shadow: 3px 3px 10px #a9a9a9;
   margin-bottom: 2rem;
@@ -257,7 +256,7 @@ aside h2
 
 .certifications ul
 {
-  list-style-position: inside;
+  padding-left: 1rem;
 }
 
 .certifications ul li
@@ -279,7 +278,7 @@ aside h2
 
 .skills ul
 {
-  list-style-position: inside;
+  padding-left: 1rem;
 }
 
 .skills ul li
@@ -317,23 +316,14 @@ footer ul
   list-style: none;
 }
 
-.socials{
+.socials
+{
   margin-bottom: 2rem;
-  
 }
 
 .socials li
 {
   text-align: center;
-}
-
-.icon {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-image: url('/images/hackerrank-icon.png');
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /* Footer Link Styles */
@@ -374,22 +364,54 @@ footer p
 Responsive styles:
 ******************/
 
+
 /************************************************
-Desktop styles (screen width less than 1200px): 
+Desktop styles (screen width less than 1100px): 
 ************************************************/
 
-@media screen and (max-width: 1200px) {
-  h1 {
-    font-size: 2.2rem;
-    margin-bottom: 0.5rem;
+@media screen and (max-width: 1100px) 
+{
+  body
+  {
+    font-size: .8rem;
   }
-  header section {
-    font-size: 1.4em;
-    padding: 0.8rem;
+    
+  h1 
+  {
+    font-size: 2rem;
   }
-  aside {
+  h2
+  {
     font-size: 1rem;
   }
+
+  header 
+  {
+    margin-top: 1rem;
+    height: 6rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  aside 
+  {
+    font-size: .7rem;
+  }
+
+  aside h2
+  {
+    font-size: 1rem;
+  }
+
+  .contact
+  {
+    font-size: .6rem;
+  }
+  .socials
+  {
+    margin-bottom: 1.5rem;
+  }
+
 }
 
 
@@ -397,163 +419,169 @@ Desktop styles (screen width less than 1200px):
 Mobile styles (screen width less than 960px): 
 ********************************************/
 
-@media screen and (max-width: 960px) {
-  body {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "head head head head"
-      "aside main main main"
-      "foot foot foot foot";
-  }
-  header {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-      "nav nav nav nav"
-      "img sec sec sec";
-  }
-  nav {
-    font-size: 1rem;
-    padding: 0.3rem;
-  }
-
-  header section {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-  }
-
-  h2 {
+@media screen and (max-width: 960px) 
+{
+    
+  h1 
+  {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
   }
 
-  main {
-    font-size: 1.1rem;
-    padding: 1rem;
-    padding-bottom: 0;
+  header 
+  {
+    margin-top: 1rem;
+    height: 4rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
   }
 
-  main section {
-    margin-bottom: 1.5rem;
+
+  footer
+  {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
   }
 
-  main li {
-    margin-bottom: 1rem;
+  footer p
+  {
+    font-size: .6rem;
   }
 
-  aside {
-    font-size: 0.9rem;
-    padding: 1rem 1rem;
-    padding-right: 0;
+  .socials
+  {
+  margin-bottom: 1rem;
   }
 
-  aside li {
-    margin-bottom: 1rem;
-  }
-
-  footer {
-    font-size: 0.9rem;
-    padding: 0.3rem;
-  }
 }
+
 
 /*******************************************
 Mobile styles (screen width less than 720px): 
 ********************************************/
 
-@media screen and (max-width: 720px) {
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+@media screen and (max-width: 720px) 
+{
+  body
+  {
+    font-size: .6rem;
+  }
+    
+  h1 
+  {
+    font-size: 2rem;
+  }
+  
+  h2
+  {
+    font-size: .8rem;
   }
 
-  h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
-    text-shadow: None;
+  header 
+  {
+    height: 4rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
   }
 
-  header section {
-    font-size: 1rem;
-    padding: 0.4rem;
+  .bio
+  {
+    padding: 1rem;
   }
 
-  main {
-    font-size: 0.9rem;
-    padding: 0.9rem;
+  aside 
+  {
+    font-size: .6rem;
   }
 
-  main section {
-    margin-bottom: 1rem;
+  aside h2
+  {
+    font-size: .8rem;
   }
 
-  main li {
-    margin-bottom: 0.8rem;
+  .contact
+  {
+    font-size: .6rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
-  aside {
-    font-size: 0.8rem;
-    padding: 0.9rem 0.5rem;
-    padding-right: 0;
+  .contactLinks li:nth-child(2)
+  {
+    font-size: .45rem;
   }
 
-  footer {
-    font-size: 0.7rem;
+  aside section
+  {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
+
+  footer p
+{
+  font-size: .5rem;
 }
+}
+
 
 /*******************************************
 Mobile styles (screen width less than 600px): 
 ********************************************/
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+@media screen and (max-width: 600px) 
+{
+  body
+  {
+    font-size: .5rem;
   }
 
-  h2 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+  h1 
+  {
+    font-size: 1.5rem;
+  }
+  
+  h2
+  {
+    font-size: .7rem;
   }
 
-  header section {
-    font-size: 0.8rem;
+  aside h2
+  {
+    font-size: .7rem;
   }
 
-  main {
-    font-size: 0.8rem;
-    padding: 0.7rem;
+  aside section
+  {
+    font-size: .5rem;
   }
 
-  main li {
-    margin-bottom: 0.4rem;
+  .contact
+  {
+    font-size: .5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  aside {
-    font-size: 0.65rem;
-    padding: 0.7rem 0.5rem;
-    padding-right: 0;
+  .contactLinks li:nth-child(2)
+  {
+    font-size: .35rem;
   }
 
-  aside h2 {
-    text-shadow: none;
+  aside section
+  {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  aside a:link {
-    text-shadow: none;
+  footer p
+  {
+    font-size: .5rem;
   }
 
-  aside a:visited {
-    text-shadow: none;
+  .socials
+  {
+  margin-bottom: .5rem;
   }
-
-  aside a:hover {
-    font-weight: bold;
-  }
-  aside a:active {
-    background-color: whitesmoke;
-    font-style: italic;
-  }
+  
 }
 
 /*******************************************
@@ -562,128 +590,167 @@ Mobile styles (screen width less than 480px):
 
 @media screen and (max-width: 480px) 
 {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "head "
-      "main"
-      "aside"
-      "foot";
+
+  body
+  {
+    font-size: .9rem;
   }
 
-  h1 {
-    font-size: 2rem;
-    margin: 0;
-    padding: 0.5rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 1rem 2rem;
-  }
-
-  header {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "nav"
-      "sec"
-      "img";
-    text-align: center;
-    border-bottom: none;
-    margin: 0;
-  }
-
-  nav {
-    font-size: 1.3rem;
-    padding: 1rem 0.5rem;
-    border-bottom: None;
-  }
-
-  header section {
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    border-left: none;
-  }
-
-  header img {
-    width: 70%;
-    justify-self: center;
-    border: 3px solid black;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px darkgrey;
-  }
-
-  main {
-    font-size: 0.9rem;
-    padding: 0.1rem;
-    padding-bottom: 0;
-    border-left: none;
-  }
-
-  main h2 {
-    text-align: center;
-  }
-
-  main section {
-    margin-bottom: 0;
-  }
-
-  main ul {
-    padding-left: 2rem;
-  }
-
-  main li {
-    margin-bottom: 0;
-    padding: 0.4rem;
-  }
-
-  aside h2 {
-    color: black;
-  }
-
-  aside {
-    color: black;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.5rem;
-    padding-right: 0;
-    text-align: center;
-    background-color: whitesmoke;
-  }
-
-  .socials {
+  main 
+  {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-direction: column;
   }
 
-  aside li {
-    padding: 0.1rem;
+  header 
+  {
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    padding: 0;
+    background-color: #a1c4be;
+    border-top: .1rem solid #000000;
+    border-bottom: .1rem solid #000000;
+    margin-bottom: 23rem;
   }
 
-  aside a:link {
-    color: black;
+  h1 
+    {
+      font-size: 2rem;
+    }
+
+  h2
+  {
+    font-size:1.5rem;
   }
 
-  aside a:visited {
-    color: black;
+  article 
+  {
+    border-bottom: none;
   }
 
-  aside a:hover {
-    color: black;
-    font-weight: bold;
+  .bio
+  {
+    padding: 2rem;
+    border: none;
   }
-  aside a:active {
-    color: black;
-    background-color: whitesmoke;
+
+  .summary
+  {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid #000000;
+  }
+
+  .work{
+    font-size: .9rem;
+  }
+
+  .workHistory
+  {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid #000000;
+  }
+
+  aside
+  {
+    padding: 2rem;
+    width: 100%;
+    color: #000000;
+    background-color: #f5f5f5;
+    border: none;
+  }
+
+  .contact
+  {
+    width: 100%;
+    font-size: 1rem;
+    border-top: none;
+    border-bottom: .2rem solid #000000;
+  }
+
+  .contactLinks li:nth-child(2)
+  {
+    font-size: 1rem;
+  }
+
+  aside section
+  {
+    width: 100%;
+    font-size: .9rem;
+    color: #000000;
+    background-color: #f5f5f5;
+    border: none;
+  }
+
+  .education
+  {
+    border-bottom: .2rem solid #000000;
+  }
+
+  .certifications
+  {
+    border-bottom: .2rem solid #000000;
+  }
+
+  .skills
+  {
+    padding-bottom: 1.5rem;
+    border-bottom: .2rem solid #000000;
+  }
+
+  img 
+  {
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 75%;    
+    border: 2px solid #000000;
+    border-radius: 3rem;
+    box-shadow: 3px 3px 10px #a9a9a9;
+    margin-top: 6rem;
+  }
+
+  aside h2
+  {
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+  }
+
+  aside a:link 
+  {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  aside a:visited 
+  {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  aside a:hover 
+  {
+    color: #000000;
+    font-weight: 550;
+    text-decoration: underline;
+  }
+
+  aside a:active 
+  {
+    color: #f5f5f5;
+    background-color: #000000;
     font-style: italic;
   }
 
-  footer {
-    font-size: 0.7rem;
-    padding: 0.5rem;
-    border-top: none;
+  .socials
+  {
+    font-size: .6rem;
+    margin-bottom: 1rem;
   }
-}
 
+}
